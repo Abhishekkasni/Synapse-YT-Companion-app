@@ -1,0 +1,18 @@
+# Environment variables — NEVER push this
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Next.js
+node_modules/
+.next/
+
+# Alembic doesn't need this
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
