@@ -40,7 +40,7 @@ app.add_middleware(
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-REDIRECT_URI = "REDIRECT_URI = "https://synapse-yt-companion-app.onrender.com"
+REDIRECT_URI = "https://synapse-yt-companion-app.onrender.com"
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
