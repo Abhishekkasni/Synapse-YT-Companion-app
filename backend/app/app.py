@@ -148,7 +148,7 @@ async def auth_callback(request: Request, db: Session = Depends(database.get_db)
     log_event(db, "GOOGLE_LOGIN_SUCCESS", "User authenticated via Google OAuth.")
 
     # Only the access_token goes to the frontend — secrets stay in DB
-    return RedirectResponse(url=f"http://localhost:3000/?token={creds.token}")
+    return RedirectResponse(url=f"https://synapse-yt-companion-app.vercel.app/?token={creds.token}")
 
 
 @app.post("/logout", tags=["Auth"])
