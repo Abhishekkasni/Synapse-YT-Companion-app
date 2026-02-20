@@ -27,7 +27,7 @@ app = FastAPI(title="YouTube Companion API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://your-vercel-url.vercel.app"],
+    allow_origins=["http://localhost:3000", "https://synapse-yt-companion-app.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -40,7 +40,7 @@ app.add_middleware(
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-REDIRECT_URI = "REDIRECT_URI = "https://your-render-url.onrender.com/auth/callback"
+REDIRECT_URI = "REDIRECT_URI = "https://synapse-yt-companion-app.onrender.com"
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
